@@ -14,13 +14,16 @@ const GetInTouch = () => {
       email: email.value,
       message: message.value,
     };
-    const response = await fetch(`https://michael-salam2.netlify.app/contact`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
+    const response = await fetch(
+      `https://michael-salam.herokuapp.com/contact`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify(details),
+      }
+    );
     setStatus("Send me a message");
     setTimeout(() => {
       alert("Thank you for contacting me! I will reply you soonest.");
