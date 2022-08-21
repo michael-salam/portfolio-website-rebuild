@@ -1,0 +1,154 @@
+@use "../../../scss/variables";
+@use "../../../scss/mixins";
+
+.project {
+    margin-right: 2rem;
+    background-color: rgba(variables.$colorSecondary, 0.6);
+    border-radius: 0.25rem;
+    min-width: 340px;
+
+    @include mixins.breakpoint-down(mobile-md) {
+        min-width: 100%;
+    }
+
+
+    .img-container {
+        border-top-right-radius: 0.25rem;
+        border-top-left-radius: 0.25rem;
+        overflow: hidden;
+
+        &:hover .img {
+            animation: pulse 300ms ease-in-out;
+        }
+
+        .img {
+            height: 12rem;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-top-right-radius: 0.25rem;
+            border-top-left-radius: 0.25rem;
+            transition: all 300ms ease-in-out;
+
+            &-todo-list {
+                background-image: linear-gradient(to right,
+                        rgba(variables.$colorPrimary, 0.3),
+                        rgba(variables.$colorPrimary, 0.3)),
+                    url(../../../images/react-todo-list-01.png);
+            }
+
+            &-splitter {
+                background-image: linear-gradient(to right,
+                        rgba(variables.$colorPrimary, 0.3),
+                        rgba(variables.$colorPrimary, 0.3)),
+                    url(../../../images/splitter-01.png);
+            }
+
+            &-notes {
+                background-image: linear-gradient(to right,
+                        rgba(variables.$colorPrimary, 0.3),
+                        rgba(variables.$colorPrimary, 0.3)),
+                    url(../../../images/react-notes-01.png);
+            }
+
+            &-easybank {
+                background-image: linear-gradient(to right,
+                        rgba(variables.$colorPrimary, 0.3),
+                        rgba(variables.$colorPrimary, 0.3)),
+                    url(../../../images/easybank-01.png);
+            }
+
+            &-intro-section {
+                background-image: linear-gradient(to right,
+                        rgba(variables.$colorPrimary, 0.3),
+                        rgba(variables.$colorPrimary, 0.3)),
+                    url(../../../images/intro-section-01.png);
+            }
+
+            &-grid-component {
+                background-image: linear-gradient(to right,
+                        rgba(variables.$colorPrimary, 0.3),
+                        rgba(variables.$colorPrimary, 0.3)),
+                    url(../../../images/grid-component-01.png);
+            }
+        }
+    }
+
+
+    .text {
+        margin: 1rem;
+
+        h3 {
+            font-weight: 600;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+
+            img {
+                height: 30px;
+                transition: all 150ms ease-in-out;
+            }
+
+            .view-code,
+            .open-site {
+                display: flex;
+                align-items: center;
+                margin-right: 1rem;
+                color: variables.$colorLightGray;
+
+                p {
+                    font-size: 10px;
+                    font-weight: 700;
+                    margin-left: 0.5rem;
+                    transition: all 150ms ease-in-out;
+
+                    @include mixins.breakpoint-down(mobile-md) {
+                        display: none;
+                    }
+                }
+
+                &:hover {
+                    p {
+                        color: variables.$colorWhite;
+                    }
+
+                    img {
+                        animation: pulse 150ms ease-in-out;
+                    }
+                }
+            }
+
+            .more-details {
+                background-color: transparent;
+                padding: 0;
+                color: variables.$colorWhite;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    // padding: 10rem;
+    // height: 20rem;
+    // width: 20rem;
+    // background-color: #fff;
+    // display: grid;
+    // place-items: center;
+    // margin: 3rem;
+}
+
+.deets {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    background: #000;
+    color: white;
+    // display: none;
+    z-index: 50;
+}

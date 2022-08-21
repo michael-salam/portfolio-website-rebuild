@@ -1,0 +1,51 @@
+@use "../../scss/variables";
+@use "../../scss/mixins";
+
+.header {
+    padding: 5rem;
+
+    @include mixins.breakpoint-down(tablet) {
+        padding: 3rem;
+    }
+
+    &__text {
+
+        .sub-heading {
+            display: inline-block;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
+            letter-spacing: 2px;
+            margin: 2rem 0 1rem 0;
+            border: 0.125rem solid variables.$colorWhite;
+            border-radius: 0.25rem;
+            padding: 0.75rem;
+            animation: float 0.4s ease-in-out alternate infinite;
+        }
+
+        .description {
+            font-size: clamp(1rem, 0.6786rem + 0.3571vw, 1.25rem);
+            line-height: 1.8;
+            color: variables.$colorLightGray;
+            width: 50%;
+
+            @include mixins.breakpoint-down(tablet) {
+                width: 70%;
+            }
+
+            @include mixins.breakpoint-down(mobile-lg) {
+                width: 100%;
+            }
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1.75rem;
+
+            &:hover {
+                animation: pulse 0.2s ease-in-out forwards;
+            }
+        }
+    }
+
+}
