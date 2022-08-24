@@ -1,79 +1,9 @@
 @use "../../scss/variables";
 @use "../../scss/mixins";
 
-.form {
-
-    .grid-group {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
-
-        @include mixins.breakpoint-down(mobile-md) {
-            grid-template-columns: 1fr;
-        }
-    }
-
-    .form-group {
-        margin-bottom: 1rem;
-
-        label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-size: 0.875rem;
-            color: variables.$colorLightGray;
-        }
-
-        input,
-        textarea {
-            width: 45%;
-            border: none;
-            border-radius: 0.25rem;
-            padding: 0.75rem;
-            background-color: rgba(variables.$colorWhite, 0.7);
-            color: variables.$colorPrimary;
-            font-weight: 600;
-            transition: all 0.3s ease-in-out;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-            @include mixins.breakpoint-down(mobile-md) {
-                width: 100%;
-            }
-
-            &:focus {
-                border-bottom: 0.25rem solid variables.$colorWhite;
-                border-color: variables.$colorPrimary
-            }
-        }
-
-        textarea {
-            // width: 95%;
-
-            @include mixins.breakpoint-down(mobile-md) {
-                width: 100%;
-            }
-        }
-
-    }
-
-    .btn {
-        padding: 1rem 3.5rem;
-        background-color: transparent;
-        // background-color: variables.$colorLightGray;
-        border: 2px solid variables.$colorLightGray;
-        color: variables.$colorLightGray;
-        width: 95%;
-
-        @include mixins.breakpoint-down(mobile-md) {
-            width: 100%;
-        }
-
-        &:hover {
-            transform: translateY(-2px);
-            box-shadow: 0px 5px 10px 0px #0005;
-        }
-
-        &:active {
-            transform: translateY(-1px);
-        }
+.btn {
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 5px 10px 0px #0005;
     }
 }
