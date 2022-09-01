@@ -15,7 +15,7 @@ const Header = () => {
           below. Get in touch so we can work together and contribute to each
           other's growth.
         </p>
-        <a href="/#" className="btn">
+        <a href="/#get-in-touch" className="btn">
           Take the first step now
         </a>
       </div>

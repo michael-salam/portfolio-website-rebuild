@@ -2,8 +2,48 @@
 @use "../../scss/mixins";
 
 .btn {
+    display: inline-block;
+
     &:hover {
         transform: translateY(-2px);
         box-shadow: 0px 5px 10px 0px #0005;
+    }
+
+    @include mixins.breakpoint-down(mobile-md) {
+        width: 100%;
+    }
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+
+    @include mixins.breakpoint-down(mobile-md) {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .link {
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 28px;
+            margin-right: 0.5rem;
+        }
+
+        p {
+            color: variables.$colorWhite;
+        }
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+
+            @include mixins.breakpoint-down(mobile-md) {
+                margin-bottom: 1.5rem;
+                margin-right: 0;
+            }
+        }
     }
 }
