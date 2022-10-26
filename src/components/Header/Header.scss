@@ -9,6 +9,7 @@
     }
 
     &__text {
+        text-align: center;
 
         .sub-heading {
             display: inline-block;
@@ -27,7 +28,8 @@
             font-size: clamp(1rem, 0.6786rem + 0.3571vw, 1.25rem);
             line-height: 1.8;
             color: variables.$colorLightGray;
-            width: 50%;
+            width: 60ch;
+            margin: auto;
 
             @include mixins.breakpoint-down(tablet) {
                 width: 70%;
