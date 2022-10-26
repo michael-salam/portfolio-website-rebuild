@@ -4,7 +4,7 @@
 .services-container {
     margin: auto;
     display: flex;
-    align-items: flex-end;
+    // align-items: flex-end;
 
     @include mixins.breakpoint-down(tablet) {
         flex-direction: column;

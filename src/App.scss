@@ -16,7 +16,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: variables.$colorPrimary;
     color: variables.$colorLightGray;
-    // background: linear-gradient(to right, #080815aa, #080815aa), url(./images/big-bg.jpg);
+    background: linear-gradient(to right, #080815aa, #080815aa), url(./images/big-bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -80,7 +80,7 @@ section {
     background-color: rgba(variables.$colorSecondary, 0.3);
     padding: 2rem;
     border-radius: 0.25rem;
-    backdrop-filter: blur(2px);
+    // backdrop-filter: blur(2px);
 
     .main-heading {
         display: inline-block;

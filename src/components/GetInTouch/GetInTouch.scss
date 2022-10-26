@@ -24,9 +24,12 @@
         align-items: start;
     }
 
+
     .link {
         display: flex;
         align-items: center;
+        transition: all 0.2s;
+
 
         img {
             height: 28px;
@@ -44,6 +47,10 @@
                 margin-bottom: 1.5rem;
                 margin-right: 0;
             }
+        }
+
+        &:hover {
+            transform: scale(0.95);
         }
     }
 }
