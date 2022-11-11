@@ -21,15 +21,15 @@ const GetInTouch = () => {
       </a>
 
       <div className="socials">
-        <a className="link" href="https://wa.link/y2rvch">
+        <a className="link" href="https://wa.link/y2rvch" target="_blank" rel="noreferrer">
           <img src={whatsappIcon} alt="Whatsapp" />
           <p>WhatsApp</p>
         </a>
-        <a className="link" href="https://twitter.com/michaeldimimu">
+        <a className="link" href="https://twitter.com/michaeldimimu" target="_blank" rel="noreferrer">
           <img src={twitterIcon} alt="Twitter" />
           <p>Twitter</p>
         </a>
-        <a className="link" href="https://www.instagram.com/michaeldimimu">
+        <a className="link" href="https://www.instagram.com/michaeldimimu" target="_blank" rel="noreferrer">
           <img src={instagramIcon} alt="Instagram" />
           <p>Instagram</p>
         </a>
