@@ -27,15 +27,10 @@
         li {
             font-weight: 900;
             font-size: 1.25rem;
-            border: 1px solid;
+            border: 3px solid variables.$colorLightGray;
             padding: 1rem;
             border-radius: 0.25rem;
             min-width: 13.5rem;
-            transition: all 0.1s ease-in-out;
-
-            &:hover {
-                animation: float 0.4s ease-in-out alternate infinite;
-            }
         }
     }
 }

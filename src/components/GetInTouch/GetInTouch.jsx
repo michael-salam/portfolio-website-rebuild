@@ -3,7 +3,7 @@ import "./GetInTouch.scss";
 // import icons
 import whatsappIcon from "../../images/icon-whatsapp.svg";
 import twitterIcon from "../../images/icon-twitter.svg";
-import instagramIcon from "../../images/icon-instagram.svg";
+import facebookIcon from "../../images/icon-facebook.svg";
 
 const GetInTouch = () => {
   return (
@@ -21,17 +21,32 @@ const GetInTouch = () => {
       </a>
 
       <div className="socials">
-        <a className="link" href="https://wa.link/y2rvch" target="_blank" rel="noreferrer">
+        <a
+          className="link"
+          href="https://wa.link/y2rvch"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={whatsappIcon} alt="Whatsapp" />
           <p>WhatsApp</p>
         </a>
-        <a className="link" href="https://twitter.com/michaeldimimu" target="_blank" rel="noreferrer">
+        <a
+          className="link"
+          href="https://twitter.com/michaeldimimu"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={twitterIcon} alt="Twitter" />
           <p>Twitter</p>
         </a>
-        <a className="link" href="https://www.instagram.com/michaeldimimu" target="_blank" rel="noreferrer">
-          <img src={instagramIcon} alt="Instagram" />
-          <p>Instagram</p>
+        <a
+          className="link"
+          href="https://www.facebook.com/michaeldimimu"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={facebookIcon} alt="Facebook" />
+          <p>Facebook</p>
         </a>
       </div>
     </section>

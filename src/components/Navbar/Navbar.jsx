@@ -37,10 +37,10 @@ const Navbar = () => {
 
       <ul className={`navbar__links ${isMenuOpen && "mobile"}`}>
         <li className="link">
-          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
         </li>
         <li className="link">
-          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
         </li>
         <li className="link">
           <a href="#about-me">About Me</a>

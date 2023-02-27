@@ -2,34 +2,34 @@
 @use "../../scss/mixins";
 
 .header {
-    padding: 5rem;
+    width: 70%;
+    margin: auto;
+    padding: 5rem 0;
 
     @include mixins.breakpoint-down(tablet) {
-        padding: 3rem;
+        width: 90%;
     }
 
     &__text {
         text-align: center;
 
-        .sub-heading {
-            display: inline-block;
-            text-transform: uppercase;
-            font-weight: 600;
-            font-size: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
-            letter-spacing: 2px;
-            line-height: 1.7;
-            margin: 2rem 0 1rem 0;
-            border: 0.125rem solid variables.$colorWhite;
-            border-radius: 0.25rem;
-            padding: 0.75rem;
-            animation: float 0.4s ease-in-out alternate infinite;
+        .heading {
+            margin-bottom: 2rem;
+
+            &__main {
+                font-weight: 600;
+            }
+
+            &__sub {
+                font-weight: 900;
+            }
         }
 
+
         .description {
-            font-size: clamp(1rem, 0.6786rem + 0.3571vw, 1.25rem);
+            font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
             line-height: 1.8;
             color: variables.$colorLightGray;
-            width: 60ch;
             margin: auto;
 
             @include mixins.breakpoint-down(tablet) {

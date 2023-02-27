@@ -6,10 +6,10 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__text">
-        <h1 className="main-heading">Welcome to my World!</h1>
-        <h2 className="sub-heading">
-          Michael Salam, Frontend Web Developer and Designer
-        </h2>
+        <div className="heading">
+          <h2 className="heading__main">Hi, Michael here. I'm a</h2>
+          <h1 className="heading__sub">Frontend Web Developer</h1>
+        </div>
         <p className="description">
           Get a feel for my services and expertise by going through my projects
           below. Get in touch so we can work together and contribute to each

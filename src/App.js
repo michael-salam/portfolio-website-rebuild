@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import "./App.scss";
 
 import Navbar from "./components/Navbar/Navbar";
@@ -8,6 +9,16 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import GetInTouch from "./components/GetInTouch/GetInTouch";
 
 function App() {
+  const [navbarHeight, setNavbarHeight] = useState(5);
+  useEffect(() => {
+    const navbar = document.querySelector(".navbar");
+    setNavbarHeight(navbar.offsetHeight);
+  }, []);
+
+  document.documentElement.style.setProperty(
+    "--scroll-padding",
+    navbarHeight + "px"
+  );
   return (
     <>
       <Navbar />
