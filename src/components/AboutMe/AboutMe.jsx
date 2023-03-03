@@ -34,7 +34,7 @@ const AboutMe = () => {
           <li>React</li>
           <li>SCSS</li>
           <li>Bootstrap</li>
-          <li>Website design</li>
+          <li>UI design</li>
           <li>Responsive design</li>
           <li>Mobile/Desktop-first design</li>
           <li>Copywriting</li>
