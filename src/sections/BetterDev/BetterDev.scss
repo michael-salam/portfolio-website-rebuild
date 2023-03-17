@@ -1,0 +1,49 @@
+@use "../../scss/mixins";
+@use "../../scss/variables";
+
+.container {
+    display: flex;
+    gap: 4rem;
+    height: 60vh;
+
+    @include mixins.breakpoint-down(tablet) {
+        flex-direction: column;
+        height: 100vh;
+        gap: 2rem;
+    }
+
+    .left {
+        flex: 1;
+        align-self: center;
+        line-height: 1.7;
+
+        @include mixins.breakpoint-down(tablet) {
+            order: 2;
+        }
+
+        p {
+            margin-bottom: 1rem;
+
+            a {
+                text-decoration: underline;
+                font-weight: 600;
+                color: variables.$colorLightGray;
+                transition: all 0.2s;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+
+    .right {
+        flex: 1;
+        background-image: url(../../images/betterdev-cover.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.9;
+        border-radius: 0.375rem;
+    }
+}

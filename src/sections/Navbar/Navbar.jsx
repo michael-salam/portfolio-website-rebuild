@@ -46,6 +46,9 @@ const Navbar = () => {
           <a href="#about-me">About Me</a>
         </li>
         <li className="link">
+          <a href="#community">My Community</a>
+        </li>
+        <li className="link">
           <a className="btn" href="#get-in-touch">
             Get in touch
           </a>

@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import "./App.scss";
 
-import Navbar from "./components/Navbar/Navbar";
-import Header from "./components/Header/Header";
-import Projects from "./components/Projects/Projects";
-import Services from "./components/Services/Services";
-import AboutMe from "./components/AboutMe/AboutMe";
-import GetInTouch from "./components/GetInTouch/GetInTouch";
+import Navbar from "./sections/Navbar/Navbar";
+import Header from "./sections/Header/Header";
+import Projects from "./sections/Projects/Projects";
+import Services from "./sections/Services/Services";
+import AboutMe from "./sections/AboutMe/AboutMe";
+import BetterDev from "./sections/BetterDev/BetterDev";
+import GetInTouch from "./sections/GetInTouch/GetInTouch";
 
 function App() {
   const [navbarHeight, setNavbarHeight] = useState(5);
@@ -26,6 +27,7 @@ function App() {
       <Projects />
       <Services />
       <AboutMe />
+      <BetterDev />
       <GetInTouch />
     </>
   );

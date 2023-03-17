@@ -33,55 +33,35 @@
             background-repeat: no-repeat;
             border-top-right-radius: 0.25rem;
             border-top-left-radius: 0.25rem;
+            opacity: 0.9;
             transition: all 300ms ease-in-out;
 
             &-coderlex {
-                background-image: linear-gradient(to right,
-                        rgba(variables.$colorPrimary, 0.3),
-                        rgba(variables.$colorPrimary, 0.3)),
-                    url(../../../images/coderlex.png);
+                background-image: url(../../../images/coderlex.png);
             }
 
             &-todo-list {
-                background-image: linear-gradient(to right,
-                        rgba(variables.$colorPrimary, 0.3),
-                        rgba(variables.$colorPrimary, 0.3)),
-                    url(../../../images/react-todo-list-01.png);
+                background-image: url(../../../images/react-todo-list-01.png);
             }
 
             &-splitter {
-                background-image: linear-gradient(to right,
-                        rgba(variables.$colorPrimary, 0.3),
-                        rgba(variables.$colorPrimary, 0.3)),
-                    url(../../../images/splitter-01.png);
+                background-image: url(../../../images/splitter-01.png);
             }
 
             &-notes {
-                background-image: linear-gradient(to right,
-                        rgba(variables.$colorPrimary, 0.3),
-                        rgba(variables.$colorPrimary, 0.3)),
-                    url(../../../images/react-notes-01.png);
+                background-image: url(../../../images/react-notes-01.png);
             }
 
             &-easybank {
-                background-image: linear-gradient(to right,
-                        rgba(variables.$colorPrimary, 0.3),
-                        rgba(variables.$colorPrimary, 0.3)),
-                    url(../../../images/easybank-01.png);
+                background-image: url(../../../images/easybank-01.png);
             }
 
             &-intro-section {
-                background-image: linear-gradient(to right,
-                        rgba(variables.$colorPrimary, 0.3),
-                        rgba(variables.$colorPrimary, 0.3)),
-                    url(../../../images/intro-section-01.png);
+                background-image: url(../../../images/intro-section-01.png);
             }
 
             &-grid-component {
-                background-image: linear-gradient(to right,
-                        rgba(variables.$colorPrimary, 0.3),
-                        rgba(variables.$colorPrimary, 0.3)),
-                    url(../../../images/grid-component-01.png);
+                background-image: url(../../../images/grid-component-01.png);
             }
         }
     }

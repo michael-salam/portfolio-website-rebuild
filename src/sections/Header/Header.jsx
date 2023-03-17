@@ -7,16 +7,15 @@ const Header = () => {
     <header className="header">
       <div className="header__text">
         <div className="heading">
-          <h2 className="heading__main">Hi, Michael here. I'm a</h2>
-          <h1 className="heading__sub">Frontend Web Developer</h1>
+          <h1 className="heading__sub">Transform Your Online Presence</h1>
         </div>
         <p className="description">
-          Get a feel for my services and expertise by going through my projects
-          below. Get in touch so we can work together and contribute to each
-          other's growth.
+          Hi, I'm Michael. If a custom, easy to use website that converts and
+          helps you achieve your goals is what you're looking for, you are in
+          the right place.
         </p>
         <a href="/#get-in-touch" className="btn">
-          Take the first step now
+          Get in touch now!
         </a>
       </div>
     </header>

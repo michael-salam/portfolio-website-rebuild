@@ -4,18 +4,16 @@
 .services-container {
     margin: auto;
     display: flex;
+    gap: 4rem;
 
     @include mixins.breakpoint-down(tablet) {
         flex-direction: column;
+        gap: 2rem;
     }
 
     .service {
         width: 100%;
-        border-radius: 0.25rem;
         font-size: 1rem;
-        padding: 2rem;
-        border: 3px solid rgba(variables.$colorLightGray, 0.5);
-        text-align: center;
 
         &:not(:last-child) {
             margin-right: 2rem;
