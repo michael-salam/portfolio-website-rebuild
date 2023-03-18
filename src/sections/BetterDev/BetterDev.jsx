@@ -9,7 +9,7 @@ const BetterDev = () => {
       <div className="container">
         <div className="left">
           <p>
-            I'm someone who takes pride in contriuting to the growth of others,
+            I'm someone who takes pride in contributing to the growth of others,
             which is why I created a web developer community called BetterDev
           </p>
           <p>

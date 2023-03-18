@@ -22,7 +22,6 @@ const Project = ({ project, projects }) => {
       {isRenderingDetails && (
         <ProjectDetails
           project={project}
-          projects={projects}
           handleTogglePopup={handleTogglePopup}
         />
       )}

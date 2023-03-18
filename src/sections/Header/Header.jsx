@@ -10,7 +10,7 @@ const Header = () => {
           <h1 className="heading__sub">Transform Your Online Presence</h1>
         </div>
         <p className="description">
-          Hi, I'm Michael. If a custom, easy to use website that converts and
+          Hi, I'm Michael. If a custom, easy-to-use website that converts and
           helps you achieve your goals is what you're looking for, you are in
           the right place.
         </p>

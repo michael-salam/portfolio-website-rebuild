@@ -7,20 +7,75 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
-    max-height: 60vh;
     padding: 2rem;
     color: white;
-    border-radius: 0.25rem;
+    border-radius: 0.875rem;
     z-index: 120;
     background-color: variables.$colorPrimary;
 
-    h1 {
-        margin-bottom: 1rem;
+    @include mixins.breakpoint-down(mobile-lg) {
+        width: 95%;
     }
 
-    p {
-        line-height: 1.7;
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 2rem;
+
+        .closeBtn {
+            width: 3rem;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            opacity: 0.8;
+            transition: all 0.1s;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
     }
+
+    .about {
+        max-height: 65vh;
+        overflow-y: scroll;
+        line-height: 1.7;
+
+        .stack {
+            margin-top: 1rem;
+            border: 1px solid;
+            padding: 1rem;
+            border-radius: 0.5rem;
+
+            h3 {
+                font-weight: 900;
+            }
+
+            ul {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+                gap: 1rem;
+
+                li {
+                    padding: 0.5rem 1rem;
+                    border: 1px solid;
+                    font-weight: 700;
+                    border-radius: 0.375rem;
+                    margin-top: 0.5rem;
+                    text-transform: uppercase;
+                    background-color: variables.$colorLightGray;
+                    color: variables.$colorPrimary;
+                }
+            }
+        }
+    }
+
 }
 
 .overlay {
@@ -31,17 +86,7 @@
     left: 0;
     background-color: rgba(74, 74, 74, 0.067);
     backdrop-filter: blur(2px);
-}
-
-.closeBtn {
-    border: none;
-    background: transparent;
-    font-size: 2rem;
-    color: white;
-    position: absolute;
-    right: -1.5rem;
-    top: -1.5rem;
-    cursor: pointer;
+    z-index: 100;
 }
 
 @keyframes appear {
