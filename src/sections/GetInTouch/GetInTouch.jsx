@@ -16,7 +16,10 @@ const GetInTouch = () => {
         </h3>
       </div>
 
-      <a className="btn" href="mailto:michael.o.salam@gmail.com">
+      <a
+        className="btn"
+        href="mailto:michael.o.salam@gmail.com?subject=Hey Michael, I'd love to work with you!&body=My name is [insert name here]. I saw your website and you are just what we've been looking for. [Specify how I can help you]"
+      >
         Send me an email: michael.o.salam@gmail.com
       </a>
 
