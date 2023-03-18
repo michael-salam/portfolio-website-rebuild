@@ -16,8 +16,8 @@ const GetInTouch = () => {
         </h3>
       </div>
 
-      <a className="btn" href="mailto:michaeldimimu@gmail.com">
-        Send me an email: michaeldimimu@gmail.com
+      <a className="btn" href="mailto:michael.o.salam@gmail.com">
+        Send me an email: michael.o.salam@gmail.com
       </a>
 
       <div className="socials">

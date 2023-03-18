@@ -1,10 +1,16 @@
 @use "../../scss/mixins";
 @use "../../scss/variables";
 
+section:hover {
+    .right img {
+        opacity: 0.9;
+    }
+}
+
 .container {
     display: flex;
+    align-items: center;
     gap: 4rem;
-    height: 60vh;
 
     @include mixins.breakpoint-down(tablet) {
         flex-direction: column;
@@ -14,12 +20,7 @@
 
     .left {
         flex: 1;
-        align-self: center;
         line-height: 1.7;
-
-        @include mixins.breakpoint-down(tablet) {
-            order: 2;
-        }
 
         p {
             margin-bottom: 1rem;
@@ -39,11 +40,18 @@
 
     .right {
         flex: 1;
-        background-image: url(../../images/betterdev-cover.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        opacity: 0.9;
-        border-radius: 0.375rem;
+
+        img {
+            opacity: 0.3;
+            border-radius: 0.375rem;
+            width: 70%;
+            transition: all 1s;
+
+            @include mixins.breakpoint-down(tablet) {
+                opacity: 0.9;
+                width: 100%;
+            }
+        }
+
     }
 }

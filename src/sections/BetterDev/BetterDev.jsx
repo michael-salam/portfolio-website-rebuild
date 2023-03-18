@@ -1,5 +1,7 @@
 import "./BetterDev.scss";
 
+import betterdev from "../../images/betterdev-cover.png";
+
 const BetterDev = () => {
   return (
     <section id="community">
@@ -20,7 +22,9 @@ const BetterDev = () => {
             <a href="https://wa.link/bhvg28">Find out how you can join</a>
           </p>
         </div>
-        <div className="right" />
+        <div className="right">
+          <img src={betterdev} alt="BetterDev cover" />
+        </div>
       </div>
     </section>
   );
